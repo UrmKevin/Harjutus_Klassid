@@ -45,7 +45,7 @@ namespace Harjutus_Klassid
             if (ad == 1)
             {
                 konna="Tallinn";
-            }
+            }   
             else if (ad == 2)
             {
                 konna="Narva, Narva-Jõesuu";
