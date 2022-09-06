@@ -10,9 +10,17 @@ namespace Harjutus_Klassid
     {
         static void Main(string[] args)
         {
-            Opilane mees = new Opilane("Ash", 1990, Isik.Sugu.naine,"TLVL", 8, "da");
+            Tootaja tootaja = new Tootaja("Ash", 1990, Isik.Sugu.naine, "31204", "31204", "asd", "amet", 2000);
+            tootaja.printInfo();
+            Console.WriteLine();
 
-            mees.printInfo();
+            Kutsekooliopilane kutsekooliopilane = new Kutsekooliopilane("Daniel", 1990, Isik.Sugu.mees, "12463", "12463", "Tartu Tehnikaülikool ", 3, "tarkvaraarendaja", "..");
+            kutsekooliopilane.printInfo();
+            Console.WriteLine();
+
+            Opilane opilane = new Opilane("Marta", 1990, Isik.Sugu.naine, "13521" ,"13521", "TLVL", 9, "humanitaar");
+            opilane.printInfo();
+            Console.WriteLine();
 
             Console.ReadKey();
         }
