@@ -14,7 +14,7 @@ namespace Harjutus_Klassid
         public string toetus;
 
         public Kutsekooliopilane() { }
-        public Kutsekooliopilane(string nimi, int synniaasta, Sugu sugu, string indeks, string konna, string oppeasutus, int kursus, string eriala, string toetus) : base(nimi, synniaasta, sugu, indeks, konna)
+        public Kutsekooliopilane(string nimi, int synniaasta, Sugu sugu, string indeks, string konna, string oppeasutus, int kursus, string eriala, string toetus, double kaal, double pikkus) : base(nimi, synniaasta, sugu, indeks, konna, kaal, pikkus)
         {
             this.oppeasutus = oppeasutus;
             this.kursus = kursus;
@@ -33,6 +33,7 @@ namespace Harjutus_Klassid
             Console.WriteLine($"Õppeasutus: {oppeasutus}");
             Console.WriteLine($"Kursus: {kursus}");
             Console.WriteLine($"Eriala: {eriala}");
+            Console.WriteLine($"{KMI()}");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Harjutus_Klassid
         public double tootasu;
 
         public Tootaja() { }
-        public Tootaja(string nimi, int synniaasta, Sugu sugu, string indeks, string konna, string asutus, string amet, double tootasu) : base(nimi, synniaasta, sugu, indeks, konna)
+        public Tootaja(string nimi, int synniaasta, Sugu sugu, string indeks, string konna, string asutus, string amet, double tootasu, double kaal, double pikkus) : base(nimi, synniaasta, sugu, indeks, konna, kaal, pikkus)
         {
             this.asutus = asutus;
             this.amet = amet;
@@ -36,6 +36,7 @@ namespace Harjutus_Klassid
             Console.WriteLine($"Asutus: {asutus}");
             Console.WriteLine($"Amet: {amet}");
             Console.WriteLine($"Netopalk: {arvatuSissetulek(500,20)}");
+            Console.WriteLine($"{KMI()}");
         }
     }
 }

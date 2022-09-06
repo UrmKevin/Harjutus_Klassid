@@ -14,7 +14,7 @@ namespace Harjutus_Klassid
         public string spets;
 
         public Opilane() { }
-        public Opilane(string nimi, int synniaasta, Sugu sugu, string indeks, string konna, string koolinimi, int klass, string spets) : base(nimi, synniaasta, sugu, indeks, konna)
+        public Opilane(string nimi, int synniaasta, Sugu sugu, string indeks, string konna, string koolinimi, int klass, string spets, double kaal, double pikkus) : base(nimi, synniaasta, sugu, indeks, konna, kaal, pikkus)
         {
             this.koolinimi = koolinimi;
             this.klass = klass;
@@ -32,6 +32,7 @@ namespace Harjutus_Klassid
             Console.WriteLine($"Koolinimi: {koolinimi}");
             Console.WriteLine($"Klass: {klass}");
             Console.WriteLine($"Spetsialiseerumine: {spets}");
+            Console.WriteLine($"{KMI()}");
         }
     }
 }
