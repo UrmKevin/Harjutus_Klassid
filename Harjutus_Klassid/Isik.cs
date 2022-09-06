@@ -27,6 +27,9 @@ namespace Harjutus_Klassid
             int  age = DateTime.Now.Year - synniaasta;
             return age;
         }
-        //public abstract void muudaNimi();
+        public void muudaNimi(int uusAasta)
+        {
+            synniaasta = uusAasta;
+        }
     }
 }

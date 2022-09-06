@@ -10,7 +10,7 @@ namespace Harjutus_Klassid
     {
         static void Main(string[] args)
         {
-            Opilane mees = new Opilane("Ashot", 1990, Isik.Sugu.naine,"TLVL", 8, "GG");
+            Opilane mees = new Opilane("Ash", 1990, Isik.Sugu.naine,"TLVL", 8, "da");
 
             mees.printInfo();
 
