@@ -1,3 +1,0 @@
-Ash, 32, naine;
-Daniel, 32, mees;
-Marta, 32, naine;
